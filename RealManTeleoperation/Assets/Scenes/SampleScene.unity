@@ -6063,6 +6063,51 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 3328887dce78efd449802eb813b4056d, type: 2}
+--- !u!1 &870857285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 870857287}
+  - component: {fileID: 870857286}
+  m_Layer: 0
+  m_Name: ROSPublisherExample
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &870857286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870857285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e2cd2df1b2ed34e8cbebbb23e43292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topicName: /unity_test
+--- !u!4 &870857287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870857285}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.65024, y: -0, z: -4.41925}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &871979495
 GameObject:
   m_ObjectHideFlags: 0
@@ -6975,7 +7020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _monoscopic: 0
   _sharpenType: 0
-  _enableDynamicResolution: 0
+  _enableDynamicResolution: 1
   minDynamicResolutionScale: 1
   maxDynamicResolutionScale: 1
   quest2MinDynamicResolutionScale: 0.7
@@ -7735,6 +7780,52 @@ Transform:
   - {fileID: 389944086}
   - {fileID: 1673243248}
   m_Father: {fileID: 1073326231}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1050495023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1050495025}
+  - component: {fileID: 1050495024}
+  m_Layer: 0
+  m_Name: ROSJointStateSubscriber.cs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1050495024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050495023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65dfc555d92660f4fb7b3ae7220b0d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jointStatesTopic: /joint_states
+  jointBindings: []
+--- !u!4 &1050495025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050495023}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.65024, y: 0, z: -4.41924}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070953110
 GameObject:
@@ -8642,6 +8733,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftController: {fileID: 1419690354}
   rightController: {fileID: 1440675395}
+  leftPoseTopic: /unity/controllers/left_pose_world
+  rightPoseTopic: /unity/controllers/right_pose_world
+  leftEulerTopic: /unity/controllers/left_euler_world
+  rightEulerTopic: /unity/controllers/right_euler_world
+  logTopic: /unity/controllers/log_text
 --- !u!1 &1189260357
 GameObject:
   m_ObjectHideFlags: 0
@@ -15682,3 +15778,5 @@ SceneRoots:
   - {fileID: 1922282847}
   - {fileID: 1106775967}
   - {fileID: 512885580}
+  - {fileID: 870857287}
+  - {fileID: 1050495025}

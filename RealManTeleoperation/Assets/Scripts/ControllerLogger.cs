@@ -59,19 +59,19 @@ public class ControllerLogger : MonoBehaviour
         Vector3 rle = rightController.transform.localEulerAngles;
 
         // Keep your existing Unity logs
-        Debug.Log($"Left Controller  global Position: {lp}");
-        Debug.Log($"Left Controller  global Rotation (Euler): {le}");
-        Debug.Log($"Left Controller  global Rotation (Quaternion): {lq}");
-        Debug.Log($"Right Controller  global Position: {rp}");
-        Debug.Log($"Right Controller  global Rotation (Euler): {re}");
-        Debug.Log($"Right Controller  global Rotation (Quaternion): {rq}");
+        // Debug.Log($"Left Controller  global Position: {lp}");
+        // Debug.Log($"Left Controller  global Rotation (Euler): {le}");
+        // Debug.Log($"Left Controller  global Rotation (Quaternion): {lq}");
+        // Debug.Log($"Right Controller  global Position: {rp}");
+        // Debug.Log($"Right Controller  global Rotation (Euler): {re}");
+        // Debug.Log($"Right Controller  global Rotation (Quaternion): {rq}");
 
-        Debug.Log($"Left Controller  local Position: {llp}");
-        Debug.Log($"Left Controller  local Rotation (Euler): {lle}");
-        Debug.Log($"Left Controller  local Rotation (Quaternion): {llq}");
-        Debug.Log($"Right Controller  local Position: {rlp}");
-        Debug.Log($"Right Controller  local Rotation (Euler): {rle}");
-        Debug.Log($"Right Controller  local Rotation (Quaternion): {rlq}");
+        // Debug.Log($"Left Controller  local Position: {llp}");
+        // Debug.Log($"Left Controller  local Rotation (Euler): {lle}");
+        // Debug.Log($"Left Controller  local Rotation (Quaternion): {llq}");
+        // Debug.Log($"Right Controller  local Position: {rlp}");
+        // Debug.Log($"Right Controller  local Rotation (Euler): {rle}");
+        // Debug.Log($"Right Controller  local Rotation (Quaternion): {rlq}");
 
         // 1. Publish Pose in world space
         var leftPose = new PoseMsg(

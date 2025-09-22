@@ -22,9 +22,9 @@ public class HeaderLogger : MonoBehaviour
         Vector3 headRotationEuler = head.transform.eulerAngles;
         Quaternion headRotationQuaternion = head.transform.rotation;
 
-        Debug.Log($"Head global Position: {headPosition}");
-        Debug.Log($"Head global Rotation (Euler): {headRotationEuler}");
-        Debug.Log($"Head global Rotation (Quaternion): {headRotationQuaternion}");
+        // Debug.Log($"Head global Position: {headPosition}");
+        // Debug.Log($"Head global Rotation (Euler): {headRotationEuler}");
+        // Debug.Log($"Head global Rotation (Quaternion): {headRotationQuaternion}");
 
         //-- retreive local position and rotation 
 
@@ -32,9 +32,9 @@ public class HeaderLogger : MonoBehaviour
         Vector3 headLocalRotationEuler = head.transform.localEulerAngles;
         Quaternion headLocalRotationQuaternion = head.transform.localRotation;
 
-        Debug.Log($"Head local Position: {headLocalPosition}");
-        Debug.Log($"Head local Rotation (Euler): {headLocalRotationEuler}");
-        Debug.Log($"Head local Rotation (Quaternion): {headLocalRotationQuaternion}");
+        // Debug.Log($"Head local Position: {headLocalPosition}");
+        // Debug.Log($"Head local Rotation (Euler): {headLocalRotationEuler}");
+        // Debug.Log($"Head local Rotation (Quaternion): {headLocalRotationQuaternion}");
     }
 
     // Util Functions
