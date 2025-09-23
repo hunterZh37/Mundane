@@ -3126,7 +3126,7 @@ MonoBehaviour:
   topic: /ee_target
   frameId: base_link
   controller: {fileID: 1440675396}
-  baseFromUnity: {fileID: 942500386}
+  baseFromUnity: {fileID: 1106775967}
 --- !u!1 &436052299
 GameObject:
   m_ObjectHideFlags: 0
@@ -7364,7 +7364,6 @@ GameObject:
   - component: {fileID: 965507038}
   - component: {fileID: 965507037}
   - component: {fileID: 965507036}
-  - component: {fileID: 965507041}
   m_Layer: 0
   m_Name: '[BuildingBlock] Camera Rig'
   m_TagString: Untagged
@@ -7519,25 +7518,13 @@ Transform:
   m_GameObject: {fileID: 965507035}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: -1.75}
+  m_LocalPosition: {x: 0, y: -0.15, z: -0.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1268073595}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &965507041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965507035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65bf802899d35404b8c986db0b5edd34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &978995814
 GameObject:
   m_ObjectHideFlags: 0
