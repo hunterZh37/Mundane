@@ -49,7 +49,7 @@ public class EETargetPublisher : MonoBehaviour
             pose = new PoseMsg
             {
                 position = new PointMsg(p_ros.x, p_ros.y, p_ros.z),
-                //orientation = new QuaternionMsg(q_ros.x, q_ros.y, q_ros.z, q_ros.w)
+               // orientation = new QuaternionMsg(q_ros.x, q_ros.y, q_ros.z, q_ros.w)
                 orientation = new QuaternionMsg(0, 0, 0, 1)
             }
         };
